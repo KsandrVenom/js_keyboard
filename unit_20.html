@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://unpkg.com/mustard-ui@latest/dist/css/mustard-ui.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Unit 20</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Курс Лущнеко Александра - JS 2.0 </h1>
+        <h2>Выполил Романов Александр. Unit 20. События клавиатуры. Проект</h2>
+
+        <section>
+            <p><b>Task 11.</b></p>
+            <p> 1. Выполните в html верстку клавиш клавиатуры. Сверстайте – блок цифровых клавиш от 1 до 0. И ряд клавиш
+                q – p. Добавьте
+                клавишу левый shift, левый alt, левый ctrl, пробел, enter.</p>
+            <p>2. Добавьте на input .i-11 событие onkeypress или onkeyup или onkeydown ( по вашему выбору). Когда
+                событие происходит (
+                ввод символа в input) необходимо подсветить ( добавить класс active) клавише с таким символом. Со всех
+                остальных клавиш
+                – удалить класс active.</p>
+            <p>3. Если вводится следующий символ – повторить удаление active и подсветить клавишу с введенным символом.
+            </p>
+            <p>4. Ограничения проекта – тестируются только указанные клавиши в латинской раскладке. Комбинации клавиш не
+                тестируются.
+                Т.е. нажиматься shift+A, ctrl+shift – не будут. Все символы вводятся в нижнем регистре.</p>
+
+            <div>
+
+                <input type="text" class="i-11">
+                <div class="keyboard">
+                    <div class="number-container">
+                        <div class="number but" data-value="Digit1">1</div>
+                        <div class="number but" data-value="Digit2">2</div>
+                        <div class="number but" data-value="Digit3">3</div>
+                        <div class="number but" data-value="Digit4">4</div>
+                        <div class="number but" data-value="Digit5">5</div>
+                        <div class="number but" data-value="Digit6">6</div>
+                        <div class="number but" data-value="Digit7">7</div>
+                        <div class="number but" data-value="Digit8">8</div>
+                        <div class="number but" data-value="Digit9">9</div>
+                        <div class="number but" data-value="Digit0">0</div>
+                    </div>
+                    <div class="letter-container">
+                        <div class="letter but" data-value="KeyQ">q</div>
+                        <div class="letter but" data-value="KeyW">w</div>
+                        <div class="letter but" data-value="KeyE">e</div>
+                        <div class="letter but" data-value="KeyR">r</div>
+                        <div class="letter but" data-value="KeyT">t</div>
+                        <div class="letter but" data-value="KeyY">y</div>
+                        <div class="letter but" data-value="KeyU">u</div>
+                        <div class="letter but" data-value="KeyI">i</div>
+                        <div class="letter but" data-value="KeyO">o</div>
+                        <div class="letter but" data-value="KeyP">p</div>
+                    </div>
+                    <div class="special-container">
+                        <div class="special but" data-value="ShiftLeft">ShiftLeft</div>
+                        <div class="special but" data-value="AltLeft">AltLeft</div>
+                        <div class="special but" data-value="ControlLeft">CtrlLeft</div>
+                        <div class="special but" data-value="Space">Space</div>
+                        <div class="special but" data-value="Enter">Enter</div>
+                    </div>
+                </div>
+        </section>
+
+
+
+
+
+    </div>
+
+    <script src="unit_20.js"></script>
+</body>
+
+</html>
